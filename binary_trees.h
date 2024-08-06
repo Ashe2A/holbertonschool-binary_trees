@@ -1,6 +1,8 @@
 #ifndef BINARY
 #define BINARY
 
+#include <stddef.h>
+
 /**
  * struct binary_tree_s - Binary tree node
  *
@@ -38,6 +40,6 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *);
 binary_tree_t *binary_tree_uncle(binary_tree_t *);
 
 void binary_tree_print(const binary_tree_t *);
-static int print_t(const binary_tree_t *, int, int, char **);
+int print_t(const binary_tree_t *, int, int, char **);
 
 #endif
