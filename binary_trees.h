@@ -40,6 +40,5 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *);
 binary_tree_t *binary_tree_uncle(binary_tree_t *);
 
 void binary_tree_print(const binary_tree_t *);
-int print_t(const binary_tree_t *, int, int, char **);
 
 #endif
