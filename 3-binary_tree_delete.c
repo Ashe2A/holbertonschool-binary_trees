@@ -2,12 +2,10 @@
 #include "stdlib.h"
 
 /**
- * binary_tree_delete - creates a binary tree right node
+ * binary_tree_delete - deletes the entire tree
  * @tree: the tree to delete
- *
- * Return: the new node
  */
-binary_tree_t *binary_tree_delete(binary_tree_t *tree)
+void *binary_tree_delete(binary_tree_t *tree)
 {
 	if (tree->left != NULL)
 	{
