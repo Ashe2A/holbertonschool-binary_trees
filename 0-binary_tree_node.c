@@ -4,7 +4,7 @@
 /**
  * binary_tree_node - creates a binary tree node
  * @parent: parent of the new node
- * @value: value to inpue in the node
+ * @value: value to input in the node
  *
  * Return: the new node
  */
