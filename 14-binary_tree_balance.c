@@ -1,0 +1,13 @@
+#include "binary_trees.h"
+#include "11-binary_tree_size.c"
+
+/**
+ * binary_tree_balance - get balance of tree
+ * @tree: the tree to measure the balance of
+ *
+ * Return: balance of the tree
+ */
+int binary_tree_balance(const binary_tree_t *tree)
+{
+	return (binary_tree_size(tree->left) - binary_tree_size(tree->right));
+}
