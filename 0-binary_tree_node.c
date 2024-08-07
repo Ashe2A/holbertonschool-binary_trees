@@ -2,7 +2,7 @@
 #include "stdlib.h"
 
 /**
- * binary_tree_t - creates a binary tree node
+ * binary_tree_node - creates a binary tree node
  * @parent: parent of the new node
  * @value: value to inpue in the node
  *
