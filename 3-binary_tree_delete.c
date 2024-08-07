@@ -5,7 +5,7 @@
  * binary_tree_delete - deletes the entire tree
  * @tree: the tree to delete
  */
-void *binary_tree_delete(binary_tree_t *tree)
+void binary_tree_delete(binary_tree_t *tree)
 {
 	if (tree->left != NULL)
 	{
