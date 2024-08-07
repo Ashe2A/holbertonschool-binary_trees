@@ -1,5 +1,5 @@
 #include "binary_trees.h"
-#include "11-binary_tree_size.c"
+#include "9-binary_tree_height.c"
 
 /**
  * binary_tree_balance - get balance of tree
@@ -9,5 +9,5 @@
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
-	return (binary_tree_size(tree->left) - binary_tree_size(tree->right));
+	return (binary_tree_height(tree->left) - binary_tree_height(tree->right));
 }
