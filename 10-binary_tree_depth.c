@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+#include "5-binary_tree_is_root.c"
 
 /**
  * binary_tree_depth - get a node's depth in a tree
