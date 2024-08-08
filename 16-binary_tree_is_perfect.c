@@ -10,9 +10,15 @@
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	if (tree != NULL && (binary_tree_balance(tree) == 0))
+	int perfection = 1;
+
+	if (tree != NULL && (binary_tree_balance(tree) == 0) && (binary_tree_is_full(tree->left) == 1))
 	{
-		return (binary_tree_is_full(tree));
+		if (tree->left != NULL)
+			perfection *= binary_tree_is_perfect(tree->left);
+		if (tree->right != NULL)
+			perfection *= binary_tree_is_perfect(tree->right);
+		return (perfection);
 	}
 	return (0);
 }
